@@ -24,6 +24,7 @@ namespace Part_8___Hang_Man_Lite_Project
             if (SecretWord != txtGuess.Text)
             {
                 imgHang.Image = Properties.Resources.hangman_1;
+                
                 GuessTries = GuessTries - 1;
             }
             else if (GuessTries == 2)
@@ -40,6 +41,9 @@ namespace Part_8___Hang_Man_Lite_Project
                 lblWord.Text = txtGuess.Text.ToUpper();
             }
 
+
+
+            lstGuessedLetters.Items.Add(txtGuess.Text);
         }
     }
 }
