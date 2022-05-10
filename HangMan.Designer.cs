@@ -1,12 +1,11 @@
 ﻿namespace Part_8___Hang_Man_Lite_Project
 {
-    partial class Form1
+    partial class HangMan
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -19,9 +18,7 @@
             }
             base.Dispose(disposing);
         }
-
         #region Windows Form Designer generated code
-
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
@@ -106,18 +103,19 @@
             this.btnGuess.TabIndex = 6;
             this.btnGuess.Text = "Guess";
             this.btnGuess.UseVisualStyleBackColor = true;
+            this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
             // 
             // lblWord
             // 
             this.lblWord.AutoSize = true;
-            this.lblWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWord.Location = new System.Drawing.Point(12, 249);
+            this.lblWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 41.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWord.Location = new System.Drawing.Point(6, 249);
             this.lblWord.Name = "lblWord";
-            this.lblWord.Size = new System.Drawing.Size(392, 73);
+            this.lblWord.Size = new System.Drawing.Size(387, 63);
             this.lblWord.TabIndex = 7;
-            this.lblWord.Text = "_ _ _ _ _ _ _";
+            this.lblWord.Text = "_ _ _ _ _ _ _ _";
             // 
-            // Form1
+            // HangMan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -130,16 +128,14 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.imgHang);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "HangMan";
+            this.Text = "HangMan";
             ((System.ComponentModel.ISupportInitialize)(this.imgHang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
-
         #endregion
-
         private System.Windows.Forms.PictureBox imgHang;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
